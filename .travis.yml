@@ -2,6 +2,6 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t kashinath/dockerdemo -f Dockerfile.dev
+  - docker build -t kashinath/dockerdemo -f Dockerfile.dev .
 script:
-  - docker run kashinath/dockerdemo npm run test  
+  - docker run kashinath/dockerdemo npm run test
